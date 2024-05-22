@@ -49,6 +49,7 @@ const students = [
   },
 ];
 
+// Exercise
 const studentsWithIds = students.map(student => ({
   name: student.name,
   id: student.id,
