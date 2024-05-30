@@ -50,8 +50,14 @@ const students = [
 ];
 
 // Exercise
+// Like this you have access to an array of objects: what you log is more 
+// clear and readable, but the code is more verbose
 const studentsWithIds = students.map(student => ({
   name: student.name,
   id: student.id,
 }));
 console.log(studentsWithIds);
+
+// Like this you have access to an array of arrays (of tuples, actually)
+const studentsWithIds2 = students.map(student => [student.id, student.name]);
+console.log(studentsWithIds2);
